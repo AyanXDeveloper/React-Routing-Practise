@@ -9,9 +9,10 @@ import Navbar from './components/Navbar'
 import PageNotFound from './pages/PageNotFound'
 import EcommerceWebsite from './pages/EcommerceWebsite'
 import TodoApp from './pages/TodoApp'
-import Profile from './pages/Profile'
+import Member from './pages/Member'
 
 function App() {
+
 
   return (
     <>
@@ -20,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/team" element={<Team />} />
-            <Route path="/team/:userId" element={<Profile />} />
+            <Route path="/team/:userId" element={<Member />} />
             <Route path="/projects" element={<Projects />} >
               <Route path='ecommerce-website' element={<EcommerceWebsite />}/>
               <Route path='todo-app' element={<TodoApp />}/>
